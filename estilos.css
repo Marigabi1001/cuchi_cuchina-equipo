@@ -1,0 +1,366 @@
+@font-face {
+    font-family: 'Oraniembaum';
+    src: url(fonts/Oranienbaum/Oranienbaum-Regular.ttf);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+
+    font-family: Oraniembaum;
+}
+
+header{
+    height: 68px;
+    width: 100%;
+    background-color:#EBC89E ;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+header a:hover{
+    background-color: #EFE3D7;
+    height: 45px;
+}
+
+header a{
+    justify-self:auto;
+    text-align: center;
+    height: 30px;
+    width: 150px;
+
+    padding-top: 1.5em;
+    color: #545454;
+}
+
+div#Principal{
+    background-image: url(imagenes/Principal/LANDINGBASE.svg);
+
+    background-size: cover;
+
+    width: 100%;
+    height: 654px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+
+div#Principal div#logo{
+    width: 70%;
+    height: 654px;
+}
+
+div#Principal div#logo img{
+    position: relative;
+    top: 30px;
+    left: 250px;
+
+    width: 60%;
+}
+
+div#Principal div#eslogan p{
+    position: relative;
+    top: 200px;
+    left:30px;
+
+    font-size: 1.7em;
+    color: #B16150;
+}
+
+
+div#Principal div#eslogan{
+    width: 50%;
+    height: 654px;
+}
+
+div.topVentas{
+    height: 848px;
+    width: 100%;
+
+    background-color: #EFE3D7;
+
+    display: flex;
+    flex-direction: column;
+
+    color: #B16150;
+}
+
+div.topVentas h1{
+    position: relative;
+    top: 60px;
+    left: 45%;
+
+    font-weight: 500;
+
+    width: 200px;
+}
+
+div.topVentas div.uno-tres{
+    position: relative;
+    top: 60px;
+    left: 300px;
+
+    height: 200px;
+    width: 839px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+div.topVentas div.uno-tres div.imagen{
+
+    width: 200px;
+    height: 200px;
+}
+
+div.topVentas div.uno-tres div.imagen img{
+    width: 200px;
+
+    border-radius: 100%;
+}
+
+div.topVentas div.uno-tres div.contenido{
+    margin: 1em;
+    width: 291px;
+    height: 78px;
+}
+
+div.topVentas div.dos{
+    position: relative;
+    top: 60px;
+    left: 600px;
+
+    height: 200px;
+    width: 839px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+div.topVentas div.dos div.imagen{
+    position: relative;
+    left: -50px;
+    width: 200px;
+    height: 200px;
+}
+
+div.topVentas div.dos div.imagen img{
+    width: 250px;
+
+    border-radius: 100%;
+}
+
+div.topVentas div.dos div.contenido{
+    margin: 1em;
+    width: 291px;
+    height: 78px;
+}
+
+div.topVentas div div.contenido h2{
+    font-weight: 300;
+}
+
+div.categorias {
+    width: 100%;
+    height: 535px;
+
+    background-color: #EBC89E;
+    display: flex;
+
+    text-align: center;
+}
+
+div.categorias h1{
+    color: #B16150;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+
+    position: relative;
+    top: 70px;
+    left: 580px;
+}
+
+div.categorias div.contenedor{
+    height: 240px;
+    width: 170px;
+
+    border-radius: 10%;
+}
+
+div.categorias div.contenedor#coral{
+    background-color: #F4C9BC;
+
+    position: relative;
+    top: 200px;
+    left: 0px;
+}
+
+div.categorias div.contenedor#morado{
+    background-color: #E2BFD5;
+
+    position: relative;
+    top: 200px;
+    left: 100px;
+}
+
+div.categorias div.contenedor#rosa{
+    background-color:#F1C8D6 ;
+
+    position: relative;
+    top:200px;
+    left: 200px;
+}
+
+div.categorias div.contenedor#verde{
+    background-color: #D9E3D1;
+
+    position: relative;
+    top: 200px;
+    left: 300px;
+}
+
+div.categorias div.contenedor img{
+    width: 150px;
+    height: 140px;
+
+    margin: .5em;
+
+    border-radius: 100%;
+}
+
+div.categorias div.contenedor h3{
+    background-color: #FFFFFF;
+
+    border-radius: 50%;
+
+    width: 120px;
+    height: 25px;
+    margin-left: 1em;
+
+    color: #B16150;
+    text-align: center;
+}
+
+div.categorias div.contenedor p{
+    position: relative;
+    top: -10px;
+    color: #B16150;
+}
+
+div.sobreNosotros {
+    background-color: #EFE3D7;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    height: 720px;
+    width: 100%;
+    color: #B16150;
+    padding: 20px;
+    gap: 20px; /* Añadimos espacio entre los elementos */
+}
+
+div.sobreNosotros h1 {
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+div.sobreNosotros p {
+    margin: 0;
+    padding: 0;
+    width: 60%; 
+    text-align: center; 
+}
+
+div.sobreNosotros div.imagenes{
+    flex-direction: row;
+    
+}
+
+div.sobreNosotros img#centro{
+    width: 350px;
+    height: 350px;
+}
+
+div.sobreNosotros img#uno,div.sobreNosotros img#dos{
+    position: relative;
+    top: -50px;
+}
+
+div.sobreNosotros img {
+    width: 250px; 
+    height: 250px;
+    border-radius: 10%; 
+    padding: 12px;
+}
+
+div.sobreNosotros div.Contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+div.sobreNosotros a{
+    position: relative;
+    top: -15px;
+    left: 0;
+
+    text-decoration: none;
+
+    color: #B16150;
+}
+
+div.sobreNosotros a:hover{
+    color: #F7BCF2;
+}
+
+footer{
+    height: 356px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+}
+
+footer div.ContenidoPag{
+    width: 1015px;
+    height: 656;
+
+    background-color: #EBC89E;
+
+    color: #B16150;
+}
+
+footer div.ContenidoPag h3{
+    margin-left: 3em;
+}
+
+footer div.ContenidoPag p{
+    margin-left: 3.9em;
+}
+
+footer div.Marca{
+    width: 450px;
+
+    background-color: #EFE3D7;
+}
+
+footer div.Marca img{
+    width: 298px;
+    height: 252px;
+
+    position: relative;
+    top: 40px;
+    left: 40px;
+}
