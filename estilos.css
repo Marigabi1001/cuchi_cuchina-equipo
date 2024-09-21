@@ -192,8 +192,12 @@ div.categorias h1{
 div.categorias div.contenedor{
     height: 240px;
     width: 170px;
-
     border-radius: 10%;
+}
+
+div.categorias div.contenedor:hover{
+    transform: scale(1.1);
+    box-shadow: -2px 2px 8px #DBA83A;
 }
 
 div.categorias div.contenedor#coral{
