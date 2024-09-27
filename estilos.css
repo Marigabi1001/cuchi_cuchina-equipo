@@ -1,17 +1,25 @@
+/* *****************************************
+        FORMATO DE TAMAÑO MOBILE
+****************************************** */
 @font-face {
     font-family: 'Oraniembaum';
     src: url(fonts/Oranienbaum/Oranienbaum-Regular.ttf);
 }
 
-body{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
 
+html, body{
+    width: 100%;
+    overflow-x: hidden;
     font-family: Oraniembaum;
 }
 
 header{
-    height: 68px;
+    height: 120px;
     width: 100%;
     background-color:#EBC89E ;
 
@@ -27,17 +35,19 @@ a{
 
 header a:hover{
     background-color: #EFE3D7;
-    height: 45px;
+    height: 120px;
 }
 
 header a{
     justify-self:auto;
     text-align: center;
-    height: 30px;
-    width: 150px;
+    height: 100px;
+    width: 200px;
 
     padding-top: 1.5em;
     color: #545454;
+
+    font-size: 2em;
 }
 
 div#Principal{
@@ -61,24 +71,24 @@ div#Principal div#logo{
 div#Principal div#logo img{
     position: relative;
     top: 30px;
-    left: 250px;
+    left: 50px;
 
+    width: 90%;
+}
+
+div#Principal div#eslogan{
     width: 60%;
+    height: 654px;
 }
 
 div#Principal div#eslogan p{
     position: relative;
     top: 200px;
-    left:30px;
+    left:10px;
 
-    font-size: 1.7em;
+    font-size: 2.5em;
     color: #B16150;
-}
-
-
-div#Principal div#eslogan{
-    width: 50%;
-    height: 654px;
+    text-align: center;
 }
 
 div.topVentas{
@@ -95,10 +105,11 @@ div.topVentas{
 
 div.topVentas h1{
     position: relative;
-    top: 60px;
-    left: 45%;
+    top: 30px;
+    left: 420px;
 
     font-weight: 500;
+    font-size: 2.7em;
 
     width: 200px;
 }
@@ -106,7 +117,7 @@ div.topVentas h1{
 div.topVentas div.uno-tres{
     position: relative;
     top: 60px;
-    left: 300px;
+    left: 100px;
 
     height: 200px;
     width: 839px;
@@ -136,7 +147,7 @@ div.topVentas div.uno-tres div.contenido{
 div.topVentas div.dos{
     position: relative;
     top: 60px;
-    left: 600px;
+    left: 360px;
 
     height: 200px;
     width: 839px;
@@ -154,6 +165,7 @@ div.topVentas div.dos div.imagen{
 
 div.topVentas div.dos div.imagen img{
     width: 250px;
+    padding-top: 30px;
 
     border-radius: 100%;
 }
@@ -165,7 +177,13 @@ div.topVentas div.dos div.contenido{
 }
 
 div.topVentas div div.contenido h2{
-    font-weight: 300;
+    font-weight: 700;
+    font-size:2em ;
+}
+
+div.topVentas div div.contenido p{
+    width: 400px;
+    font-size: 1.7em;  
 }
 
 div.categorias {
@@ -183,10 +201,11 @@ div.categorias h1{
     text-transform: uppercase;
     text-align: center;
     font-weight: 500;
+    font-size: 2.7em;
 
     position: relative;
     top: 70px;
-    left: 580px;
+    left: 400px;
 }
 
 div.categorias div.contenedor{
@@ -205,7 +224,7 @@ div.categorias div.contenedor#coral{
 
     position: relative;
     top: 200px;
-    left: 0px;
+    left: -160px;
 }
 
 div.categorias div.contenedor#morado{
@@ -213,7 +232,7 @@ div.categorias div.contenedor#morado{
 
     position: relative;
     top: 200px;
-    left: 100px;
+    left: -100px;
 }
 
 div.categorias div.contenedor#rosa{
@@ -221,7 +240,7 @@ div.categorias div.contenedor#rosa{
 
     position: relative;
     top:200px;
-    left: 200px;
+    left: -40px;
 }
 
 div.categorias div.contenedor#verde{
@@ -229,7 +248,7 @@ div.categorias div.contenedor#verde{
 
     position: relative;
     top: 200px;
-    left: 300px;
+    left: 20px;
 }
 
 div.categorias div.contenedor img{
@@ -256,40 +275,40 @@ div.categorias div.contenedor h3{
 
 div.categorias div.contenedor p{
     position: relative;
-    top: -10px;
+    top: 20px;
     color: #B16150;
 }
 
 div.sobreNosotros {
+    height: 720px;
+    width: 100%;
     background-color: #EFE3D7;
     display: flex;
     flex-direction: column; 
     align-items: center; 
     justify-content: center; 
-    height: 720px;
-    width: 100%;
     color: #B16150;
-    padding: 20px;
     gap: 20px; /* Añadimos espacio entre los elementos */
 }
 
-div.sobreNosotros h1 {
+div.sobreNosotros h1{
     font-weight: 500;
     margin: 0;
     padding: 0;
     text-align: center;
+    font-size: 2.7em;
 }
 
 div.sobreNosotros p {
     margin: 0;
     padding: 0;
-    width: 60%; 
+    width: 70%; 
     text-align: center; 
+    font-size: 1.5em;
 }
 
 div.sobreNosotros div.imagenes{
     flex-direction: row;
-    
 }
 
 div.sobreNosotros img#centro{
@@ -316,12 +335,8 @@ div.sobreNosotros div.Contacto {
 }
 
 div.sobreNosotros a{
-    position: relative;
-    top: -15px;
-    left: 0;
-
+    font-size: 1.5em;
     text-decoration: none;
-
     color: #B16150;
 }
 
@@ -347,11 +362,12 @@ footer div.ContenidoPag{
 }
 
 footer div.ContenidoPag h3{
-    margin-left: 3em;
+
+    margin: 1em;
 }
 
 footer div.ContenidoPag p{
-    margin-left: 3.9em;
+    margin: 1em;
 }
 
 footer div.Marca{
@@ -366,5 +382,121 @@ footer div.Marca img{
 
     position: relative;
     top: 40px;
-    left: 40px;
+    left: 0px;
 }
+
+
+/* *****************************************
+		FORMATO DE TAMAÑO DESKTOP
+****************************************** */
+	@media (min-width: 1440px) {
+        header{
+            height: 68px;
+        }
+
+        header a:hover{
+            height: 68px;
+        }
+
+        header a{
+            height: 30px;
+            width: 200px;
+            font-size: 1.5em;
+            padding: 20px;
+        }
+
+        div#Principal div#logo img{
+            top: 30px;
+            left: 250px;
+            width: 60%;
+        }
+
+        div#Principal div#eslogan{
+            width: 50%;
+            height: 654px;
+        }
+
+        div#Principal div#eslogan p{
+            left:-70px;
+            font-size: 1.7em;
+        }
+
+        div.topVentas h1{
+            font-size: 2.5em;
+            font-weight: 300;
+
+            left: 640px;
+        }
+
+        div.topVentas div.uno-tres{
+            left: 300px;
+        
+            height: 200px;
+            width: 839px;
+        }
+
+        div.topVentas div.dos{
+            position: relative;
+            top: 60px;
+            left: 600px;
+        
+            height: 200px;
+            width: 839px;
+        }
+
+        div.topVentas div div.contenido p{
+           width: 500px;
+        }
+        
+        div.topVentas div div.contenido h2{
+            font-weight: 300;
+        }
+
+        div.categorias h1{
+            top: 70px;
+            left: 640px;
+        }
+
+        div.categorias div.contenedor#coral{
+            left: 0px;
+        }
+        
+        div.categorias div.contenedor#morado{
+            left: 100px;
+        }
+        
+        div.categorias div.contenedor#rosa{
+            left: 200px;
+        }
+        
+        div.categorias div.contenedor#verde{
+            left: 300px;
+        }
+		
+        div.sobreNosotros h1{
+            position: relative;
+            left: 0px;
+        }
+
+        div.sobreNosotros div.imagenes{
+            position: relative;
+            top: 0;
+        }
+
+        div.sobreNosotros p {
+            font-size: 1.5em;
+            position: relative;
+            left: 0px;
+        }
+
+        div.sobreNosotros div.Contacto {    
+            position: relative;
+            left: 0px;
+        }
+
+        footer div.Marca img{
+            top: 50px;
+            left: 80px;
+        }
+
+	}
